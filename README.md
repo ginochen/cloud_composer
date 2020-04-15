@@ -2,7 +2,9 @@
 This project is a demo for using Airflow on Google Cloud Composer to manage the ML pipeline with resource autoscalability.
 
 # Initiate node pools 
-I'm following the basic GKE cluster setup as ![this figure](https://miro.medium.com/max/1400/1*tHeyUE-dArS2X3seVXEz2w.png). 
+Follow the basic GKE cluster setup as ![this figure](https://miro.medium.com/max/1400/1*tHeyUE-dArS2X3seVXEz2w.png). 
+
+
 Additional node pool `n1-lowmem-2-pool` is created for model serving or other low resource purpose.
 
 In order for Composer to use these node pools, we need to first go to GKE engine in the console 
