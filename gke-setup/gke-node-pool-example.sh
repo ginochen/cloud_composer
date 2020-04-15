@@ -1,0 +1,12 @@
+gcloud container node-pools create n1-standard-1-lowmem-pool \
+   --project=[project_name] \
+   --cluster cluster-1 \
+   --machine-type n1-standard-1 \
+   --num-nodes 0 \
+   --disk-size 100 \
+   --enable-autoscaling \
+   --max-nodes=2 \
+   --min-nodes=0 \
+   --zone us-central1-c \
+   --node-taints=node-pool=n1-standard-1-lowmem-pool:NoExecute \
+   --scopes [scopes]
