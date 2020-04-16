@@ -18,7 +18,7 @@ We can also set up the GKE config directly using the [code](./gke-setup/gke-node
 
 After all node pools are set, go back to Composer to finish setting up the Airflow node pool
 
-Once set up, you can check the Log and DAG directory by clicking on the interface ![interface](./fig/composer_0.png)
+Once set up, you can check the Logs and DAGs directory by clicking on the interface ![interface](./fig/composer_0.png)
 
 Ok I'm calling the project `composer-test`, so the URI for the DAGs are under `gs://us-central1-composer-test-61840402-bucket/dags/` 
 
@@ -28,3 +28,6 @@ Log in to enable `gsutil` by:
 
 Upload the Dags by `gsutil rsync` or follow the [blog](https://engineering.adwerx.com/sync-a-github-repo-to-your-gcp-composer-airflow-dags-folder-2b87eb065915) 
 to set up `cloudbuild.yaml` file to sync the git repo directly with Composer.
+
+# Start coding DAGs
+
